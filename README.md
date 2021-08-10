@@ -1,7 +1,7 @@
 # PhoneNumberKit
 Android **Kotlin** library to parse and format international phone numbers. Based on Google's libphonenumber library.
 
-[![](https://jitpack.io/v/ibrahimsn98/PhoneNumberKit.svg)](https://jitpack.io/#ibrahimsn98/PhoneNumberKit)
+[![](https://jitpack.io/v/Albocal/PhoneNumberKit.svg)](https://jitpack.io/#Albocal/PhoneNumberKit)
 
 
 ## Features
@@ -123,7 +123,9 @@ You need to use below view ids in your layout file
 
 ## Installation
 
-> Follow me on Twitter [@ibrahimsn98](https://twitter.com/ibrahimsn98)
+> Follow the founder on Twitter [@ibrahimsn98](https://twitter.com/ibrahimsn98)
+
+> Follow me on Twitter [@Albocal](https://twitter.com/albocal)
 
 Step 1. Add the JitPack repository to your build file
 ```
@@ -137,7 +139,7 @@ allprojects {
 Step 2. Add the dependency
 ```
 dependencies {
-    implementation 'com.github.ibrahimsn98:PhoneNumberKit:1.6.2'
+    implementation 'com.github.Albocal:PhoneNumberKit:1.7.5'
 }
 ```
 
@@ -150,6 +152,7 @@ dependencies {
 - [ ] Tests
 
 ## Conception
+- This library is forked from PhoneNumberKit (https://github.com/ibrahimsn98/PhoneNumberKit/)
 - This library is based on Google's lilPhoneNumber library (https://github.com/google/libphonenumber)
 - Inspired from PhoneNumberKit Swift library by [marmelloy](https://github.com/marmelroy) (https://github.com/marmelroy/PhoneNumberKit)
 - Flag images from [region-flags](https://github.com/behdad/region-flags)
