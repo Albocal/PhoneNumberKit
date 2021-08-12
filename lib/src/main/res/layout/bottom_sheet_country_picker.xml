@@ -17,7 +17,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Country Code"
+            android:text="@string/phonekit_picker_title"
             android:textColor="#232425"
             android:textSize="16sp" />
 
@@ -45,7 +45,7 @@
             android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:queryHint="Search country code"
+            app:queryHint="@string/phonekit_picker_search_placeholder"
             app:iconifiedByDefault="false"
             app:queryBackground="@null"
             app:submitBackground="@null"/>
