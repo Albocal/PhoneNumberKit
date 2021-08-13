@@ -270,9 +270,9 @@ class PhoneNumberKit(private val context: Context) {
     /**
      * Provides country for given country iso2
      */
-    fun getCountry(countryIso2: String?): Country? {
+    fun getCountry(countryIso2orIso3: String?): Country? {
         for (country in Countries.list) {
-            if (country.iso2 == countryIso2) {
+            if (country.iso2 == countryIso2orIso3 || country.iso3 == countryIso2orIso3) {
                 return country
             }
         }
