@@ -24,7 +24,8 @@ class PhoneNumberKit(private val context: Context) {
 
     private var input: TextInputLayout? = null
 
-    private var country: Country? = null
+    var country: Country? = null
+    private set
 
     private var format: String = ""
 
