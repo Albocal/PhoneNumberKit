@@ -45,7 +45,7 @@
             android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:queryHint="@string/phonekit_picker_search_placeholder"
+            app:queryHint="@string/phonekit_picker_placeholder"
             app:iconifiedByDefault="false"
             app:queryBackground="@null"
             app:submitBackground="@null"/>
