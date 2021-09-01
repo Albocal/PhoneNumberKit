@@ -30,7 +30,7 @@ class PhoneNumberKit(private val context: Context) {
     private var format: String = ""
 
     private var hasManualCountry = false
-
+    private var ignoreManualFlag = false
     private var rawInput: CharSequence?
         get() = input?.editText?.text
         set(value) {
@@ -52,7 +52,7 @@ class PhoneNumberKit(private val context: Context) {
 
                 // Update country flag and mask if detected as a different one
                 if (country == null || country?.countryCode != parsedNumber?.countryCode) {
-                    if (!hasManualCountry) {
+                    if (!hasManualCountry && !ignoreManualFlag) {
                         setCountry(getCountry(parsedNumber?.countryCode))
                     }
                 }
@@ -62,7 +62,7 @@ class PhoneNumberKit(private val context: Context) {
                 }
 
                 validate(rawInput)
-            }
+           }
         }
     }
 
@@ -95,7 +95,9 @@ class PhoneNumberKit(private val context: Context) {
             }
         }
     }
-
+    fun setIgnoreManualFlag(flag: Boolean = false) {
+        ignoreManualFlag = flag
+    }
     private fun setCountry(country: Country?, isManual: Boolean = false, prefill: Boolean = false) {
         country?.let {
             this.country = country
