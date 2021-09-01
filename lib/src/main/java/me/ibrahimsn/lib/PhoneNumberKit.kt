@@ -52,7 +52,7 @@ class PhoneNumberKit(private val context: Context) {
 
                 // Update country flag and mask if detected as a different one
                 if (country == null || country?.countryCode != parsedNumber?.countryCode) {
-                    if (!hasManualCountry && !ignoreManualFlag) {
+                    if (!hasManualCountry || ignoreManualFlag) {
                         setCountry(getCountry(parsedNumber?.countryCode))
                     }
                 }
