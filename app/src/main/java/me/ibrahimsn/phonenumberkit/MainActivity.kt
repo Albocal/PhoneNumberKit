@@ -2,6 +2,7 @@ package me.ibrahimsn.phonenumberkit
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import me.ibrahimsn.lib.PhoneNumberKit
 
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         // To attach an editTextLayout
         phoneNumberKit.attachToInput(textField, 971)
+
 
         // Setup country code picker optionally
         phoneNumberKit.setupCountryPicker(
@@ -37,6 +39,10 @@ class MainActivity : AppCompatActivity() {
             defaultRegion = "tr"
         )
 
+        button.setOnClickListener {
+            //TODO TEST
+
+        }
         // Provides country flag icon for given iso2 code
         val flag = phoneNumberKit.getFlagIcon("tr")
 

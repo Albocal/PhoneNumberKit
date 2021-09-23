@@ -5,6 +5,7 @@ import java.util.*
 object Countries {
 
     val list = listOf(
+        Country("us", Locale("","us").isO3Country, "United States", 1),
         Country("af", Locale("","af").isO3Country, "Afghanistan (‫افغانستان‬‎)", 93),
         Country("al", Locale("","al").isO3Country, "Albania (Shqipëri)", 355),
         Country("dz", Locale("","dz").isO3Country, "Algeria (‫الجزائر‬‎)", 213),
@@ -234,7 +235,6 @@ object Countries {
         Country("ua", Locale("","ua").isO3Country, "Ukraine (Україна)", 380),
         Country("ae", Locale("","ae").isO3Country, "United Arab Emirates (‫الإمارات العربية المتحدة‬‎)", 971),
         Country("gb", Locale("","gb").isO3Country, "United Kingdom", 44),
-        Country("us", Locale("","us").isO3Country, "United States", 1),
         Country("uy", Locale("","uy").isO3Country, "Uruguay", 598),
         Country("uz", Locale("","uz").isO3Country, "Uzbekistan (Oʻzbekiston)", 998),
         Country("vu", Locale("","vu").isO3Country, "Vanuatu", 678),
